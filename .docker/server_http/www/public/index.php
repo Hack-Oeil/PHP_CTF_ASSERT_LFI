@@ -4,7 +4,7 @@ ini_set('display_startup_errors', '0');
 error_reporting(0);
 
 require '../vendor/autoload.php';
-new Yoop\Kernel(); // On doit charger le .env
+$kernel = new Yoop\Kernel(); // On doit charger le .env
 
 $output = null;
 if(isset($_GET['page']) && is_string($_GET['page'])) {
